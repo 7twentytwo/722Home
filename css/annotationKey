@@ -1,6 +1,0 @@
-This is a key for allowing the reader to quickly find and decode some annotation delimiters placed
-within the code.
-
-** - Double asterisks signify a placeholding value, something that MUST be changed before a page is deemed live.
-@@ - Double "at" signs mark a developer's comment. These are good for leaving notes or suggestions on specific
-        features within the code.
