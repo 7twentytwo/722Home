@@ -19,6 +19,14 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+  /* 
+  color:white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+ */
 }
 
 .text-vertical-center h1 {
@@ -309,3 +317,57 @@ footer {
 
 .contact-form form .contact-error { border-color: #8ec1cd; }
 
+/***** The team *****/
+
+/* 
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+ */
+
+
+.team-box {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	border: solid;
+	text-align: center;
+	color: white;
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
+
+.team-box h3 {
+	padding: 10px 0;
+}
+
+.team-box p {
+	font-size: 18px;
+/* 
+	color: #aaa;
+ */
+    line-height: 32px;
+}
+
+.team-box .team-photo {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.team-box .team-photo img {
+	width: 100%;
+}
+
+.team-box .team-social {
+    margin: 5px 0;
+    font-size: 31px;
+}
+
+.team-box .team-social a { margin: 0 5px; color: #ddd; }
+.team-box .team-social a:hover, .team-box .team-social a:focus { color: #ddd; opacity: 0.6; }
