@@ -8,13 +8,13 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = '### ENTER EMAIL AFTER SETUP ###';
+    $emailTo = 'contact@7twentytwo.com';
 	$fname = addslashes(trim($_POST['fname']));
 	$lname = addslashes(trim($_POST['lname']));
-	$company = addslashes(trim($_POST['company']));
-    $clientEmail = addslashes(trim($_POST['email']));
-//     $subject = addslashes(trim($_POST['subject']));
-    $message = addslashes(trim($_POST['message']));
+// 	$company = addslashes(trim($_POST['company']));
+//     $clientEmail = addslashes(trim($_POST['email']));
+// //     $subject = addslashes(trim($_POST['subject']));
+//     $message = addslashes(trim($_POST['message']));
 
     $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
