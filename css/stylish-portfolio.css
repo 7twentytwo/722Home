@@ -97,8 +97,24 @@ body {
 
 /* Custom Horizontal Rule */
 
+hr.tiny {
+    max-width: 60px;
+}
+
 hr.small {
     max-width: 100px;
+}
+
+hr.medium {
+    max-width: 350px;
+}
+
+hr.large {
+    max-width: 600px;
+}
+
+hr.huge {
+    max-width: 100%;
 }
 
 /* Side Menu */
@@ -334,9 +350,9 @@ hidden - Defines a hidden border
 
 
 .team-box {
-	padding-top: 30px;
-	padding-bottom: 15px;
+	/*
 	border: solid;
+	*/
 	text-align: center;
 	color: white;
 	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;	
