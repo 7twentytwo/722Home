@@ -8,33 +8,45 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'contact@7twentytwo.com';
+    $emailTo = 'bergerzndfriez@gmail.com';
 	$fname = addslashes(trim($_POST['fname']));
 	$lname = addslashes(trim($_POST['lname']));
-// 	$company = addslashes(trim($_POST['company']));
-//     $clientEmail = addslashes(trim($_POST['email']));
-// //     $subject = addslashes(trim($_POST['subject']));
-//     $message = addslashes(trim($_POST['message']));
+	$company = addslashes(trim($_POST['company']));
+    $clientEmail = addslashes(trim($_POST['email']));
+    $subject = addslashes(trim($_POST['subject']));
+    $message = addslashes(trim($_POST['message']));
 
-    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
-
-
-	// FORM IS UNFINISHED
+//     $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
+	
+	$array = array(
+		'client_email' => '',
+		'first' => '', 
+		'last' => '',
+		'subject' => '',
+		'company' => '',
+		'message' => ''
+		);
 
 
     if(!isEmail($clientEmail)) {
-        $array['emailMessage'] = 'Invalid email!';
+        $array['client_email'] = 'Invalid email!';
     }
     if($subject == '') {
-        $array['subjectMessage'] = 'Empty subject!';
+        $array['message'] = 'Empty subject!';
     }
     if($message == '') {
-        $array['messageMessage'] = 'Empty message!';
+        $array['message'] = 'Empty message!';
     }
     if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
-		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . "Reply-To: " . $clientEmail;
-		mail($emailTo, $subject . " (OradaCommunity)", $message, $headers);
+		$headers = 
+			"From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . 
+			"Reply-To: " . $clientEmail . "\r\n" . 
+			"Company: ".$company . "\r\n" . 
+			"Name: " $fname." ".$lname
+			;
+		
+		mail($emailTo, $subject ."(7TwentyTwo)", $message, $headers);
     }
     echo json_encode($array);
 }
