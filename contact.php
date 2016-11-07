@@ -8,7 +8,7 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'turnerb24@gmail.com';
+    $emailTo = 'bergerzndfriez@gmail.com';
 	$fname = addslashes(trim($_POST['fname']));
 	$lname = addslashes(trim($_POST['lname']));
 	$company = addslashes(trim($_POST['company']));
@@ -16,39 +16,26 @@ if($_POST) {
     $subject = addslashes(trim($_POST['subject']));
     $message = addslashes(trim($_POST['message']));
 
-//     $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
-	
-	$array = array(
-		'client_email' => '',
-		'first' => '', 
-		'last' => '',
-		'subject' => '',
-		'company' => '',
-		'message' => ''
-		);
+    $array = array('emailMessage' => '', 'subjectMessage' => '', 'messageMessage' => '');
 
 
     if(!isEmail($clientEmail)) {
-        $array['client_email'] = 'Invalid email!';
+        $array['emailMessage'] = 'Invalid email!';
     }
     if($subject == '') {
-        $array['message'] = 'Empty subject!';
+        $array['subjectMessage'] = 'Empty subject!';
     }
     if($message == '') {
-        $array['message'] = 'Empty message!';
+        $array['messageMessage'] = 'Empty message!';
     }
     if(isEmail($clientEmail) && $subject != '' && $message != '') {
         // Send email
-		$headers = 
-			"From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . 
-			"Reply-To: " . $clientEmail . "\r\n" . 
-			"Company: ".$company . "\r\n" . 
-			"Name: " .$fname." ".$lname
-			;
-		
-		mail($emailTo, $subject ."(7TwentyTwo)", $message, $headers);
+		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" .
+		"Reply-To: " . $clientEmail;
+		$message = "Name: ".$fname." ".$lname. "\r\n" ."Company: ".$company. "\r\n" ."Message: ".$message;
+		mail($emailTo, $subject, $message, $headers);
     }
-    echo json_encode($array);
+    header('Location: http://www.7twentytwo.com/redirect.html');
 }
 
 ?>
