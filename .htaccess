@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^7twentytwo.com$
+RewriteRule ^/?$ "http\:\/\/www\.7twentytwo\.com\/" [R=301,L]
+
+ErrorDocument 404 /404.shtml
