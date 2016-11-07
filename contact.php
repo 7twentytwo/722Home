@@ -8,7 +8,7 @@ function isEmail($email) {
 if($_POST) {
 
     // Enter the email where you want to receive the message
-    $emailTo = 'bergerzndfriez@gmail.com';
+    $emailTo = 'turnerb24@gmail.com';
 	$fname = addslashes(trim($_POST['fname']));
 	$lname = addslashes(trim($_POST['lname']));
 	$company = addslashes(trim($_POST['company']));
@@ -43,7 +43,7 @@ if($_POST) {
 			"From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" . 
 			"Reply-To: " . $clientEmail . "\r\n" . 
 			"Company: ".$company . "\r\n" . 
-			"Name: " $fname." ".$lname
+			"Name: " .$fname." ".$lname
 			;
 		
 		mail($emailTo, $subject ."(7TwentyTwo)", $message, $headers);
