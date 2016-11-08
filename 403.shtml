@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="404 Error page">
+    <meta name="description" content="403 Error page">
     <meta name="author" content="Turner Bowling">
 
-    <title>404 | 7TwentyTwo</title>
+    <title>403 | 7TwentyTwo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,48 +32,48 @@
 
 <body>
 
-    <!-- Header -->
-    <header id="top" class="contact-header">
-        <!-- Navigation -->
-        <a href="index.html" class="btn btn-dark btn-lg toggle">Home</a>
-        <div class="text-contact" style="color: #337ab7">
-            <h1>Oops!</h1>
-            <h3>Looks like something broke</h3>
-            <br>
-        </div>
-    </header>
+<!-- Header -->
+<header id="top" class="contact-header">
+    <!-- Navigation -->
+    <a href="index.html" class="btn btn-dark btn-lg toggle">Home</a>
+    <div class="text-contact" style="color: #337ab7">
+        <h1>Oops!</h1>
+        <h3>Looks like this isn't ready yet</h3>
+        <br>
+    </div>
+</header>
 
-    <!-- Content -->
-    <section class="about">
-        <div class="container">
-            <h2 class="text-center">Our site is still under construction, and it seems we've missed something. We apologize for the
+<!-- Content -->
+<section class="about">
+    <div class="container">
+        <h2 class="text-center">Our site is still under construction, and it seems we're still working on something. We apologize for the
             inconvenience, and we're working to get everything up and running as soon as we can.</h2>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>7TwentyTwo Web Solutions LLC.</strong>
-                    </h4>
-                    <p>82 Bethany Rd
-                        <br>Suite 6
-                        <br>Hazlet, New Jersey 07730</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (267) 642 6300</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:contact@7twentytwo.com">contact@7twentytwo.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; 7TwentyTwo LLC 2016</p>
-                </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>7TwentyTwo Web Solutions LLC.</strong>
+                </h4>
+                <p>82 Bethany Rd
+                    <br>Suite 6
+                    <br>Hazlet, New Jersey 07730</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (267) 642 6300</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:contact@7twentytwo.com">contact@7twentytwo.com</a>
+                    </li>
+                </ul>
+                <br>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; 7TwentyTwo LLC 2016</p>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</footer>
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
