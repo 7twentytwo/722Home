@@ -33,7 +33,7 @@ if($_POST) {
 		$headers = "From: " . $clientEmail . " <" . $clientEmail . ">" . "\r\n" .
 		"Reply-To: " . $clientEmail;
 		$message = "Name: ".$fname." ".$lname. "\r\n" ."Company: ".$company. "\r\n" ."Message: ".$message;
-		mail($emailTo, $subject, $message, $headers);
+		mail($emailTo, $subject, $message, $headers, "-f turner@7twentytwo.com");
     }
     header('Location: http://www.7twentytwo.com/redirect.html');
 }

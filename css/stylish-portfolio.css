@@ -98,19 +98,19 @@ body {
 /* Custom Horizontal Rule */
 
 hr.tiny {
-    max-width: 60px;
+    max-width: 10%;
 }
 
 hr.small {
-    max-width: 100px;
+    max-width: 30%;
 }
 
 hr.medium {
-    max-width: 350px;
+    max-width: 50%;
 }
 
 hr.large {
-    max-width: 600px;
+    max-width: 80%;
 }
 
 hr.huge {
