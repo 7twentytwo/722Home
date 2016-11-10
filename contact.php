@@ -35,7 +35,7 @@ if($_POST) {
 		$message = "Name: ".$fname." ".$lname. "\r\n" ."Company: ".$company. "\r\n" ."Message: ".$message;
 		mail($emailTo, $subject, $message, $headers, "-f turner@7twentytwo.com");
     }
-    header('Location: http://www.7twentytwo.com/redirect.html');
+    header('Location: /redirect.html');
 }
 
 ?>
