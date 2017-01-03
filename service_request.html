@@ -21,6 +21,9 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Custom PHP -->
+    <link href="contact.php" rel="script">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,8 +49,9 @@
                 <div class="col-lg-12 text-center">
                 	<h2>How can we help you?</h2>
                     <p class="lead">
-                    Leave your contact information below. Please leave an email address and phone number so that we can get back to you.
-                     Choose a subject from the list below. Please detail any specific requests or other information in the messages box.
+                        Leave your contact information below. Please leave an email address and phone number so that
+                        we can get back to you. Please detail any specific requests or other information in the messages
+                        box.
                     </p>
                 </div>
             </div>
@@ -62,45 +66,45 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-sm-12 contact section-description wow fadeIn">
-									<div class="divider-1 wow fadeInUp"><span></span></div>
+									<div class="divider-1 wow fadeInUp"></div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-12 contact-form wow fadeInLeft">
 									<!-- Contact Form -->
-									<form role="form" action="contact.php" method="post">
+									<form class="contact-form" role="form" action="contact.php" method="post">
 					
-										<p>First Name</p>
+										<h4>First Name</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-fname">First Name</label>
-											<input style="color: #000000" type="text" name="fname" placeholder="First Name..." class="contact-email">
+											<input required autofocus style="color: #000000" type="text" name="fname" placeholder="First Name..." class="contact-email">
 										</div>
 						
-										<p>Last Name</p>
+										<h4>Last Name</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-lname">Last Name</label>
-											<input style="color: #000000" type="text" name="lname" placeholder="Last Name..." class="contact-email">
+											<input required style="color: #000000" type="text" name="lname" placeholder="Last Name..." class="contact-email">
 										</div>
 					
-										<p>Company (if applicable)</p>
+										<h4>Company (if applicable)</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-company">Company</label>
 											<input style="color: #000000" type="text" name="company" placeholder="Company..." class="contact-email">
 										</div>
 						
-										<p>Email<p>
+										<h4>Email</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-email">Email</label>
-											<input style="color: #000000" type="text" name="email" placeholder="Email..." class="contact-email">
+											<input required style="color: #000000" type="text" name="email" placeholder="Email..." class="contact-email">
 										</div>
 										
-										<p>Subject<p>
+										<h4>Subject</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-email">Subject</label>
-											<input style="color: #000000" type="text" name="subject" placeholder="Subject..." class="contact-email">
+											<input required style="color: #000000" type="text" name="subject" placeholder="Subject..." class="contact-email">
 										</div>
 										
-										<p>Message<p>
+										<h4>Message (optional)</h4>
 										<div class="form-group">
 											<label class="sr-only" for="contact-message">Message</label>
 											<textarea style="color: #000000" name="message" placeholder="Message..." class="contact-message" id="contact-message"></textarea>
