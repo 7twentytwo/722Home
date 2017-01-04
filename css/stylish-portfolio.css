@@ -95,28 +95,6 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
-
-hr.tiny {
-    max-width: 10%;
-}
-
-hr.small {
-    max-width: 30%;
-}
-
-hr.medium {
-    max-width: 50%;
-}
-
-hr.large {
-    max-width: 80%;
-}
-
-hr.huge {
-    max-width: 100%;
-}
-
 /* Side Menu */
 
 #sidebar-wrapper {

@@ -1,0 +1,89 @@
+/* Custom Horizontal Rule */
+
+hr.tiny {
+    max-width: 10%;
+}
+
+hr.small {
+    max-width: 30%;
+}
+
+hr.medium {
+    max-width: 50%;
+}
+
+hr.large {
+    max-width: 80%;
+}
+
+hr.huge {
+    max-width: 100%;
+}
+
+#content {
+    background-color: #ffffff;
+    padding: 0;
+}
+
+#content h2 {
+    width: auto;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgba(77, 77, 77, 0.5)
+}
+
+#cloudServices {
+    padding: 20px 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../img/yellowFull.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#targetedAds {
+    padding: 20px 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../img/lightFull.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#dataAnalytics {
+    padding: 20px 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../img/darkFull.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #ffffff;
+}
+
+#security {
+    padding: 20px 0px;
+    width: 100%;
+    height: 50%;
+    background: url(../img/redFull.jpeg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #ffffff;
+}
+
+div.note {
+    background-color: #337ab7;
+    padding: 30px;
+}
+
+h1.note, h2.note, h3.note, h4.note, h5.note {
+    color: #ffffff;
+    font-family: Helvetica Neue;
+}
